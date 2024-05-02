@@ -1,0 +1,88 @@
+@import url("./variable.scss");
+
+@font-face {
+  font-family: "SofiaPro";
+  src: url("../assets/fonts/SofiaPro.ttf") format("truetype");
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent;
+}
+
+html {
+  font-size: 100%;
+}
+
+html * {
+  font-family: "SofiaPro", sans-serif;
+}
+
+body {
+  font-weight: 400;
+  overflow-y: overlay;
+
+  color: var(--text-color);
+
+  * {
+    margin: 0;
+  }
+}
+
+a {
+  text-decoration: none;
+  color: unset;
+}
+
+button,
+input,
+select {
+  outline: 0;
+  font-size: 15px;
+}
+
+option {
+  letter-spacing: 1px;
+}
+
+ul {
+  list-style: none;
+}
+
+img {
+  width: 100%;
+}
+
+h4.section__title {
+  margin: 0px;
+  font-family: "SVN-Sofia Pro Medium", "Public Sans", sans-serif;
+  font-weight: 500;
+  line-height: 1.375;
+  font-size: 24px;
+  letter-spacing: -0.03em;
+  text-transform: capitalize;
+}
+
+html *::-webkit-scrollbar {
+  border-radius: 0;
+  width: 8px;
+  height: 8px;
+  color: #000;
+  display: overlay;
+
+  @media (max-width: 740px) {
+    width: 0.5px;
+  }
+}
+
+html *::-webkit-scrollbar-thumb {
+  border-radius: 4px;
+  background-color: rgb(209, 209, 209);
+}
+
+html *::-webkit-scrollbar-track {
+  border-radius: 0;
+  background-color: rgba(68, 68, 68, 0);
+}

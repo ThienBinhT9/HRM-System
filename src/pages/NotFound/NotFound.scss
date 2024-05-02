@@ -1,0 +1,33 @@
+.wrapper-notFound {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.inner-notfound {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.notfound-heading {
+  font-weight: 500;
+  font-size: 22px;
+}
+
+.notfound-btn {
+  &:hover {
+    color: white;
+  }
+}
+
+.notfound-desc {
+  opacity: 0.6;
+}
+
+.notfound-bg {
+  width: 50%;
+}

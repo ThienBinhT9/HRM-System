@@ -1,0 +1,79 @@
+.wrapper__selectedFeild {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin-bottom: 16px;
+
+  .selectedFeild__label {
+    flex: 3;
+    color: var(--text-color);
+    font-size: 16px;
+  }
+
+  .selectedFeild__sub {
+    flex: 5;
+    width: 100%;
+
+    .selectedFeild__select {
+      min-height: 50px;
+      width: 100%;
+      border-radius: 3px;
+      background-color: rgb(241, 243, 245);
+
+      .ant-select-selector {
+        background-color: unset;
+        padding: 12px;
+      }
+
+      span {
+        font-size: 16px;
+      }
+    }
+  }
+
+  .error {
+    .selectedFeild__select {
+      border-radius: 3px;
+      background-color: rgb(255, 239, 239);
+    }
+
+    .ant-select-selector {
+      border: 1px solid red;
+    }
+  }
+}
+
+.vertical {
+  flex-direction: column;
+  align-items: flex-start;
+  .selectedFeild__label {
+    color: var(--text-color);
+    font-size: 16px;
+  }
+
+  .selectedFeild__select {
+    width: 100%;
+    border-radius: 3px;
+    flex: 5;
+    background-color: rgb(241, 243, 245);
+
+    span {
+      font-size: 16px;
+    }
+  }
+
+  .error {
+    .selectedFeild__select {
+      border-radius: 3px;
+      background-color: rgb(255, 239, 239);
+    }
+    .ant-select-selector {
+      border: 1px solid red;
+    }
+  }
+}
+
+.selectFeild__err {
+  font-size: 12px;
+  color: red;
+}

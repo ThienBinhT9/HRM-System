@@ -1,0 +1,12 @@
+.setting__title {
+  margin-bottom: 32px;
+}
+
+.wrapper-changePassword {
+  .card__inner {
+    width: 300px;
+    @media (max-width: 300px) {
+      width: 100%;
+    }
+  }
+}

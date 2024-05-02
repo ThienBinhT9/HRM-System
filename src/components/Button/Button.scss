@@ -1,0 +1,46 @@
+.wrapper__button {
+  padding: 3px 12px;
+  font-size: 14px;
+  height: 36px;
+  margin-bottom: 6px;
+
+  span {
+    line-height: 1;
+  }
+}
+
+.ant-btn-lg {
+  display: inline-block;
+  font-size: 16px;
+  padding: 8px 22px;
+  height: 48px;
+}
+
+.ant-btn-sm {
+  padding: 3px 12px;
+  font-size: 13px;
+  height: 32px;
+}
+
+.ant-btn-link {
+  &:hover {
+    text-decoration: underline !important;
+  }
+}
+
+.ant-btn-text {
+  color: rgb(0, 145, 255);
+  background-color: rgb(237, 246, 255);
+
+  &:hover {
+    color: rgb(0, 145, 255) !important;
+    background-color: rgb(237, 246, 255) !important;
+  }
+}
+
+.ant-btn-text.ant-btn-dangerous {
+  background-color: #ffefef;
+  &:hover {
+    color: #ff4d4f !important;
+  }
+}

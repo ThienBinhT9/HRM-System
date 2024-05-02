@@ -1,0 +1,16 @@
+.wrapper-mainLayout {
+  .mainLayout__content {
+    display: flex;
+    margin-top: var(--height-header-pc);
+
+    .mainLayout__page {
+      @media (max-width: 860px) {
+        width: calc(860px - var(--width-sider));
+      }
+
+      flex: 1;
+      background-color: #f8f9fa;
+      width: calc(100vw - var(--width-sider) - 8px);
+    }
+  }
+}

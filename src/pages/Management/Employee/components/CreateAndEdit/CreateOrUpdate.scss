@@ -1,0 +1,73 @@
+.wrapper-createEmployee {
+  .ant-card-head-title {
+    margin: 0px;
+    font-weight: 500;
+    line-height: 1.35;
+    font-size: 20px;
+  }
+
+  .create__card {
+    .create__inner {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      gap: 40px;
+
+      @media (max-width: 1024px) {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0;
+      }
+
+      .other__inner {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+      }
+
+      .section__inner {
+        width: 560px;
+
+        @media (max-width: 1000px) {
+          width: 100%;
+        }
+      }
+
+      .card__inner__boxshadow {
+        width: 100%;
+        border-radius: 6px;
+        border: 2px solid rgb(223, 227, 230);
+        padding: 8px;
+      }
+
+      .inner__half {
+        @media (max-width: 1024px) {
+          width: 100%;
+        }
+        flex: 1;
+      }
+
+      .subcard__header {
+        display: flex;
+        align-items: center;
+        gap: 24px;
+        margin-bottom: 24px;
+      }
+    }
+
+    .contact__title {
+      margin-top: 18px;
+      font-size: 18px;
+      font-weight: 500;
+      display: inline-block;
+    }
+  }
+
+  .tab-btns {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 24px;
+  }
+}
